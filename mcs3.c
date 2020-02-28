@@ -13,12 +13,13 @@ if(filedes < 0){
 	exit(1);
 }
 else{
-	nread = read(filedes, buffer, 12);
+	nread = read(filedes, buffer, 225);
 		if(nread <0){
 			printf("read failed\n");
 		}else{
 			printf("%s\n", buffer);
 			printf("Reading successful\n");
+			printf("The number of processes are %d\n",filedes );
 		}
 }
 }
